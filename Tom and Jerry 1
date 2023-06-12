@@ -1,0 +1,10 @@
+# cook your dish here
+t = int(input())
+for i in range(t):
+    A, B, C, D, K = map(int, input().split())
+    #Use Manhattan Distance Technique
+    dist = abs(A-C) + abs(B-D)
+    if dist <= K and (K - dist)%2 == 0:
+        print("YES")
+    else:
+        print("NO")
